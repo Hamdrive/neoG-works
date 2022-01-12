@@ -13,8 +13,6 @@ const obj = {
     bhallo : 2
 }
 
-const {c : arrr = [2,3,4].push(5), aloo} = obj 
+const {c : aloo = [2,3,4].push(5)} = obj 
 
-console.log(arr, aloo)
-
-// OP -> 4 1
+// OP -> 4
