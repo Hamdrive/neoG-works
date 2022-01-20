@@ -1,0 +1,21 @@
+@import url("./card1_style.css");
+@import url("./card2_style.css");
+@import url("./card3_style.css");
+@import url("./card4_style.css");
+@import url("./card5_style.css");
+@import url("./card6_style.css");
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+body > div{
+    margin: 0 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;
+}

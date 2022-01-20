@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card5{
+    background-color: rgba(53, 53, 53, 0.082);
+    width: 350px;
+    height: max-content;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    position: relative;
+
+}
+
+.card5-img{
+    width: 350px;
+    height: auto;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card5-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.card5_text-main{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card5_text-auth{
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.card5_text-sub{
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    color: grey;
+}
+
+.card5-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.card5_cta-btns{
+    display: none;
+}
+
+.card5_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.card5_cta-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.card5_cta-icons i{
+    font-size: 1.25rem;
+    color: grey;
+}
+
+.card5_cta-icons:hover{
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+.card5_cta-icons:hover i{
+    color: black;
+}

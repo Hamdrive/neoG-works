@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card6{
+    background-color: rgba(53, 53, 53, 0.082);
+    width: 350px;
+    height: max-content;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    position: relative;
+
+}
+
+.card6_head{
+    display: flex;
+}
+
+.card6-img{
+    border-top-left-radius: 0.5rem;
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+
+.card6-img img{
+    width: 120px;
+}
+
+.card6-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.card6_text-main{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card6_text-auth{
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.card6-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.card6_cta-btns{
+    display: flex;
+}
+
+.card6_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.card6_cta-btns button{
+    background: none;
+    border: none;
+    color: purple;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.card6-footer button:hover{
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+.card6_cta-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.card6_cta-icons i{
+    font-size: 1.25rem;
+    color: grey;
+}
+
+.card6_cta-icons:hover{
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+.card6_cta-icons:hover i{
+    color: black;
+}

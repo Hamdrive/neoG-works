@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: max-content;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    position: relative;
+    background-color: rgba(53, 53, 53, 0.082);
+
+}
+
+.card2-img{
+    width: 350px;
+    height: auto;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card2-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white;
+}
+
+.card2_text-main{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card2_text-auth{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card2_text-sub{
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    color: grey;
+}
+
+.card2-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.card2_cta-btns{
+    display: flex;
+}
+
+.card2_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.card2_cta-btns button{
+    background: none;
+    border: none;
+    color: purple;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.card2_cta-btns button:hover{
+    background-color: rgba(128, 128, 128, 0.473);
+
+}
+
+.card2_cta-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.card2_cta-icons i{
+    font-size: 1.25rem;
+    color: grey;
+}
+
+.card2_cta-icons:hover{
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+.card2_cta-icons:hover i{
+    color:  black;
+
+}
