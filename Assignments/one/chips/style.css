@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.chips_container{
+    display: flex;
+    border-bottom: 2px solid black;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+
+.chip{
+    padding: 0.75rem;
+    background-color: rgba(128, 128, 128, 0.507);
+    border-radius: 1rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 500;
+}
+
+.chip:hover{
+    background-color: rgba(128, 128, 128, 0.719);
+    transition: 0.2s;
+}
+
+.chip p{
+    margin-right: 0.5rem;
+}
+
+.chip i{
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+    border: none;
+    flex: 1;
+    min-width: 100px;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
