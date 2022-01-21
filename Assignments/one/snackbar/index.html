@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0ae1aebe6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Snackbar</title>
+  </head>
+  <body>
+    <main>
+      <div class="snackbar-btns">
+        <button id="btn-baseline">Baseline</button>
+        <button id="btn-leading">Leading</button>
+        <button id="btn-stacked">Stacked</button>
+      </div>
+      <div class="baseline">
+        <span>Whoops! Something went wrong there...</span>
+        <section class="cta">
+          <button>RETRY</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+      <div class="leading">
+        <span>You've ordered 100 pizzas! Enjoy!</span>
+        <section class="cta">
+          <button>UNDO</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+      <div class="stacked">
+        <span
+          >Looks like you already placed this order, please confirm if you want to repeat this
+          again?
+        </span>
+        <section class="cta">
+          <button>REPEAT</button>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
