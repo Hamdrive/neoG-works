@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0ae1aebe6f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Dialog</title>
+  </head>
+  <body>
+    <main>
+      <div class="alert">
+        <button id="open-alert">Open Alert Dialog</button>
+      </div>
+      <div class="alert">
+        <button id="open-simple">Open Simple Dialog</button>
+      </div>
+      <div class="alert">
+        <button id="open-confirmation">Open Confirmation Dialog</button>
+      </div>
+      <div class="modal-container">
+        <section class="modal-alert">
+          <h2>Dialog header</h2>
+          <p>Dialog text</p>
+          <footer class="modal-footer">
+            <button id="close-alert">Action 1</button>
+            <button id="close-alert">Action 2</button>
+          </footer>
+        </section>
+        <section class="modal-simple">
+          <h2>Dialog header</h2>
+          <hr />
+          <div class="modal_simple-items">
+            <ul>
+              <li class="nav-item">
+                <span><i class="fas fa-user-circle"></i> Item 1</span>
+              </li>
+              <li class="nav-item">
+                <span><i class="fas fa-user-circle"></i> Item 2</span>
+              </li>
+              <li class="nav-item">
+                <span><i class="fas fa-user-circle"></i> Item 3</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="modal-confirmation">
+          <h2>Dialog header</h2>
+          <hr />
+          <div class="modal_confirmation-items">
+            <span class="radio-item">
+              <input type="radio" name="item" id="item1" checked/>
+              <label for="item1">Item 1</label>
+            </span>
+            <span class="radio-item">
+              <input type="radio" name="item" id="item2" />
+              <label for="item2">Item 2</label>
+            </span>
+            <span class="radio-item">
+              <input type="radio" name="item" id="item3" />
+              <label for="item3">Item 3</label>
+            </span>
+            <span class="radio-item">
+              <input type="radio" name="item" id="item4" />
+              <label for="item4">Item 4</label>
+            </span>
+            <span class="radio-item">
+              <input type="radio" name="item" id="item5" />
+              <label for="item5">Item 5</label>
+            </span>
+          </div>
+          <footer class="modal-footer">
+            <button id="close-conf-alert">Action 1</button>
+            <button id="close-conf-alert">Action 2</button>
+          </footer>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

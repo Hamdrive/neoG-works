@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+  padding: 0.5rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+i {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+  margin-right: 2rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  color: blueviolet;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+main {
+  width: 1000px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert {
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert button {
+  border: 2px solid blueviolet;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  /* display: none; */
+}
+
+.alert > button:hover {
+  background-color: rgba(137, 43, 226, 0.55);
+  color: white;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s ease-in-out;
+}
+
+.modal-alert,
+.modal-simple,
+.modal-confirmation {
+  display: none;
+  height: max-content;
+  width: 400px;
+  max-width: 100%;
+  padding: 1rem;
+  border: 2px solid blueviolet;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-alert p {
+  flex: 1;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem 0;
+}
+
+.modal-footer > button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.modal-footer > button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.modal_simple-items {
+  padding: 1rem 0;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.modal_confirmation-items {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: scroll;
+}
