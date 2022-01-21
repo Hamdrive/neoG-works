@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+}
+.text_badge,
+.button_badge-visible,
+.button_badge-toggle,
+.icon_badge {
+  position: relative;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm {
+  transform: translate(100%, -50%);
+  width: 25px;
+  height: 25px;
+  font-size: 0.8rem;
+}
+
+.lg {
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+.button_badge-visible > button,
+.button_badge-toggle > button {
+  background-color: blueviolet;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.button_badge-toggle > button:hover {
+  background-color: rgb(129, 19, 231);
+}
+
+.toggle {
+  display: none;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.icon > i {
+  font-size: 3rem;
+  color: red;
+}
