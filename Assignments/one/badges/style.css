@@ -69,6 +69,7 @@ body {
   color: white;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  margin-left: 1rem;
 }
 
 .button_badge-toggle > button:hover {
@@ -83,6 +84,8 @@ body {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  margin-left: 1rem;
+
 }
 
 .icon > i {
