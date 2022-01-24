@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.drawer-fixed {
+  max-width: 60%;
+  height: 70%;
+  display: flex;
+  position: relative;
+}
+
+.drawer-aside {
+  min-width: 30%;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-aside p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.drawer-menu {
+  overflow-y: auto;
+  height: 80%;
+  
+}
+
+.drawer-menu div {
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  
+}
+.drawer-menu div:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+
+.drawer-aside span {
+  margin-left: 2rem;
+}
+
+.drawer-title {
+  padding: 1rem 0.5rem;
+}
+
+.drawer-title p {
+  margin-top: 0.7rem;
+}
+
+.drawer-main {
+  flex-grow: 1;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.drawer-main h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: sticky;
+}
+
+.drawer-main p {
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+}
+
+.drawer-main-title {
+  background-color: blueviolet;
+  color: white;
+  font-weight: 500;
+}
+
+.active {
+  background-color: rgba(137, 43, 226, 0.5);
+}
