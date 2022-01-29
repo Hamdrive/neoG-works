@@ -4,7 +4,7 @@ const short = document.querySelector(".short");
 const title = document.querySelector(".header-title");
 const download = document.querySelector(".header-download");
 
-collapseWin.addEventListener("scroll", (evt) => {
+collapseWin.addEventListener("scroll", () => {
   const distTop = collapseWin.scrollTop;
 
   if (distTop > 0) {
