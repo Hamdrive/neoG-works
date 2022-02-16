@@ -3,8 +3,8 @@ const input = ["apple", "orange", "water", "mango", "banana"];
 
 //a. Find the number of strings with similar number of characters
 const lengthObjReducer = (lengthObj, value) => {
-  const len = value.length;
-  lengthObj[len] ? (lengthObj[len] += 1) : (lengthObj[len] = 1);
+  if (value.length in lengthObj) lengthObj[value.length]++;
+  else lengthObj[value.length] = 1;
   return lengthObj;
 };
 
