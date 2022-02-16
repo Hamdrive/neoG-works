@@ -62,7 +62,7 @@ ul {
 }
 
 .tab:focus {
-  border-bottom: 5px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
   background-color: rgba(137, 43, 226, 0.5);
 }
 
