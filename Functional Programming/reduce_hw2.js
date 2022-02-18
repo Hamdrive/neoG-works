@@ -13,11 +13,11 @@ const getLengthObj = input.reduce(lengthObjReducer, {});
 //b. Given an array of strings return an array of string with vowels
 const words = ["gym", "apple", "lynch", "peacock"];
 
-const vowels = ["a", "e", "i", "o", "u"];
+const vowels = "aeiou";
 
 const getWords = (word) => {
   let flag = false;
-  vowels.forEach((vowel) => {
+  [...vowels].map((vowel) => {
     if (word.includes(vowel)) flag = true;
   });
   if (flag) return word;
